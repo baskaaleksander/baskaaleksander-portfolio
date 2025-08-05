@@ -6,7 +6,7 @@ export default function Header() {
     <header className="mb-8">
       <div className="w-20 h-20 mb-4 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
         <Image
-          src="/avatar.svg"
+          src="/avatar.png"
           alt="Profile Picture"
           width={80}
           height={80}
@@ -14,33 +14,35 @@ export default function Header() {
           priority
         />
       </div>
-      <h1 className="text-2xl font-medium mb-1">Alexander Baskal</h1>
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-        Full Stack Developer & Software Engineer
+      <h1 className="text-2xl font-medium mb-1 text-[#1a1a1a] dark:text-gray-100">
+        Aleksander Baska
+      </h1>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+        Full Stack Developer
       </p>
       <section className="mb-8">
         <div className="flex flex-wrap gap-4 text-xs">
           <a
-            href="mailto:your.email@example.com"
-            className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            href="mailto:baskaaleksander03@gmail.com"
+            className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-[#1a1a1a] dark:hover:text-gray-100"
           >
             <Mail size={12} />
             Email
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/baskaaleksander"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-[#1a1a1a] dark:hover:text-gray-100"
           >
             <Github size={12} />
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/baskaaleksander"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-[#1a1a1a] dark:hover:text-gray-100"
           >
             <Linkedin size={12} />
             LinkedIn
@@ -48,7 +50,7 @@ export default function Header() {
           <a
             href="/resume.pdf"
             download
-            className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+            className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-[#1a1a1a] dark:hover:text-gray-100"
           >
             <Download size={12} />
             Resume

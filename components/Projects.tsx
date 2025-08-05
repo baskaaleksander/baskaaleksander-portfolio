@@ -1,30 +1,7 @@
+import { projects } from "@/data/projects";
 import { ExternalLink } from "lucide-react";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Task Management App",
-      description:
-        "A productivity app built with React and Node.js that helps teams organize their work efficiently.",
-      tech: ["React", "Node.js", "MongoDB"],
-      link: "#",
-    },
-    {
-      title: "E-commerce Platform",
-      description:
-        "Full-stack e-commerce solution with payment integration and admin dashboard.",
-      tech: ["Next.js", "Stripe", "PostgreSQL"],
-      link: "#",
-    },
-    {
-      title: "Data Visualization Tool",
-      description:
-        "Interactive dashboard for data analysis and visualization using D3.js.",
-      tech: ["D3.js", "Python", "Flask"],
-      link: "#",
-    },
-  ];
-
   return (
     <section className="mb-8">
       <h2 className="text-sm font-medium uppercase tracking-wide text-gray-400 dark:text-gray-500 mb-4">
@@ -34,10 +11,12 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div key={index}>
             <div className="flex justify-between items-start mb-1">
-              <h3 className="text-sm font-normal">{project.title}</h3>
+              <h3 className="text-sm font-normal text-[#1a1a1a] dark:text-gray-100">
+                {project.title}
+              </h3>
               <a
                 href={project.link}
-                className="text-xs text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 flex items-center gap-1"
+                className="text-xs text-gray-500 hover:text-[#1a1a1a] dark:hover:text-gray-100 flex items-center gap-1"
               >
                 <ExternalLink size={10} />
                 View
