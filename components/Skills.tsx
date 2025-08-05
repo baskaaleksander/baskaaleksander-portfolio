@@ -19,7 +19,7 @@ export default function Skills() {
               {category.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="text-xs text-gray-500 dark:text-gray-500"
+                  className="text-xs text-[#1a1a1a] dark:text-gray-100"
                 >
                   {skill}
                 </span>
