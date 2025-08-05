@@ -38,7 +38,7 @@ export default function Projects() {
             <p className="text-xs text-gray-500 dark:text-gray-500 leading-relaxed mb-1">
               {project.description}
             </p>
-            <div className="flex gap-1">
+            <div className="flex flex-wrap gap-1">
               {project.tech.map((tech, techIndex) => (
                 <span
                   key={techIndex}

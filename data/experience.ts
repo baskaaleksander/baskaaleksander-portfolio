@@ -1,26 +1,10 @@
 export const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    title: "IT Onsite Support Intern",
+    company: "Carlsberg Shared Services",
+    location: "Poznań, Poland",
+    period: "05.2024 - Present",
     description:
-      "Lead development of scalable web applications, mentor junior developers, and collaborate with cross-functional teams to deliver high-quality software solutions.",
-  },
-  {
-    title: "Software Engineer",
-    company: "StartupXYZ",
-    location: "New York, NY",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained React-based frontend applications, implemented RESTful APIs, and contributed to architectural decisions for product scalability.",
-  },
-  {
-    title: "Junior Developer",
-    company: "WebSolutions Ltd.",
-    location: "Remote",
-    period: "2019 - 2020",
-    description:
-      "Built responsive websites and web applications using modern JavaScript frameworks, collaborated with design teams, and learned best practices in software development.",
+      "Supported users in Microsoft 365 and Windows environments (Intune, Azure AD), managed office hardware, resolved basic network issues, handled device onboarding and asset tracking, improved IT documentation, and modified scripts to create simple automation tools.",
   },
 ];
