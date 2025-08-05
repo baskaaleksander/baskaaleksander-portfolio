@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -14,13 +14,26 @@ export default function Projects() {
               <h3 className="text-sm font-normal text-[#1a1a1a] dark:text-gray-100">
                 {project.title}
               </h3>
-              <a
-                href={project.link}
-                className="text-xs text-gray-500 hover:text-[#1a1a1a] dark:hover:text-gray-100 flex items-center gap-1"
-              >
-                <ExternalLink size={10} />
-                View
-              </a>
+              <div className="flex items-center gap-3">
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    className="text-xs text-gray-500 hover:text-[#1a1a1a] dark:hover:text-gray-100 flex items-center gap-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={10} />
+                    GitHub
+                  </a>
+                )}
+                <a
+                  href={project.link}
+                  className="text-xs text-gray-500 hover:text-[#1a1a1a] dark:hover:text-gray-100 flex items-center gap-1"
+                >
+                  <ExternalLink size={10} />
+                  View
+                </a>
+              </div>
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-500 leading-relaxed mb-1">
               {project.description}

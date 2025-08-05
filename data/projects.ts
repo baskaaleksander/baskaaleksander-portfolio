@@ -1,23 +1,18 @@
 export const projects = [
   {
-    title: "Task Management App",
+    title: "E-Book Marketplace",
     description:
-      "A productivity app built with React and Node.js that helps teams organize their work efficiently.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "#",
+      "Modern, full-stack eBook marketplace that connects readers with authors and publishers. The platform provides a seamless experience for buying, selling, and discovering digital books across multiple genres and categories.",
+    tech: ["Next.js", "AWS S3", "Stripe", "PostgreSQL", "Docker"],
+    link: "https://ebook-marketplace-chi.vercel.app/",
+    githubLink: "https://github.com/baskaaleksander/ebook-marketplace",
   },
   {
-    title: "E-commerce Platform",
+    title: "Financial Tracker API",
     description:
-      "Full-stack e-commerce solution with payment integration and admin dashboard.",
-    tech: ["Next.js", "Stripe", "PostgreSQL"],
+      "A RESTful API for personal financial management built with Node.js, Express, TypeScript, and MongoDB. This application allows users to track their income and expenses, categorize transactions, and generate financial reports.",
+    tech: ["Express.js", "TypeScript", "MongoDB", "Jest", "Swagger/OpenAPI"],
     link: "#",
-  },
-  {
-    title: "Data Visualization Tool",
-    description:
-      "Interactive dashboard for data analysis and visualization using D3.js.",
-    tech: ["D3.js", "Python", "Flask"],
-    link: "#",
+    githubLink: "https://github.com/baskaaleksander/financial-tracker-api",
   },
 ];

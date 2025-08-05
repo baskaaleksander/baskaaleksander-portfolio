@@ -10,9 +10,9 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-[#1a1a1a] text-[#1a1a1a] dark:text-gray-100">
       <div className="max-w-2xl mx-auto py-12 px-6">
         <Header />
-        <Experience />
         <Projects />
         <Skills />
+        <Experience />
         <Education />
         <Footer />
       </div>
