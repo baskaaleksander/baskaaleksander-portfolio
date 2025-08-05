@@ -14,7 +14,7 @@ export default function Header() {
           priority
         />
       </div>
-      <h1 className="text-2xl font-medium mb-1 text-[#1a1a1a] dark:text-gray-100">
+      <h1 className="text-2xl font-semibold mb-1 text-[#1a1a1a] dark:text-gray-100">
         Aleksander Baska
       </h1>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
