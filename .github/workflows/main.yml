@@ -19,12 +19,6 @@ jobs:
       - name: Deploy on VPS
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }} "
-            NODE_VERSION=\$(node -v 2>/dev/null || echo 'v0.0.0')
-            if [ \"\$(echo \$NODE_VERSION | cut -c2- | cut -d. -f1)\" -lt 22 ]; then
-              curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && \
-              sudo apt-get install -y nodejs
-            fi
-            node -v && npm -v
             cd /var/www/portfolio && \
             git reset --hard && \
             git pull origin master && \
