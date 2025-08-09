@@ -16,16 +16,16 @@ jobs:
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
-
-      - name: Deploy on VPS
+      - name: Deploy on VPS (debug)
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
-            export NVM_DIR=\"$HOME/.nvm\" && \
-            [ -s \"$NVM_DIR/nvm.sh\" ] && \. \"$NVM_DIR/nvm.sh\" && \
-            cd /var/www/portfolio && \
-            git reset --hard && \
-            git pull origin master && \
-            npm install && \
-            npm run build && \
+            set -x
+            export NVM_DIR=\"$HOME/.nvm\"
+            [ -s \"$NVM_DIR/nvm.sh\" ] && \. \"$NVM_DIR/nvm.sh\"
+            cd /var/www/portfolio
+            git reset --hard
+            git pull origin master
+            npm install
+            npm run build
             pm2 restart portfolio
           "
