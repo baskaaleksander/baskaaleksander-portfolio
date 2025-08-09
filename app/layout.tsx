@@ -1,26 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  display: "swap",
+	subsets: ['latin'],
+	weight: ['400', '500', '600'],
+	display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "Aleksander Baska",
-  description: "Full Stack Developer",
+	title: 'Aleksander Baska | baskaaleksander.com',
+	description: 'Full Stack Developer',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${inter.className}`}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang='en'>
+			<body className={`${inter.className}`}>{children}</body>
+		</html>
+	);
 }
