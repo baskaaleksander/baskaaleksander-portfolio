@@ -19,7 +19,7 @@ jobs:
       - name: Deploy on VPS
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.SSH_HOST }} "
-            cd /var/www/portfolio && \
+            cd /var/www/baskaaleksander-portfolio && \
             git reset --hard && \
             git pull origin master && \
             npm install && \
