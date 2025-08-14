@@ -46,7 +46,7 @@ export default function Header() {
             LinkedIn
           </a>
           <a
-            href="/resume.pdf"
+            href="/aleksander_baska_resume.pdf"
             download
             className="flex items-center gap-1 text-gray-400 hover:text-gray-100"
           >
