@@ -16,6 +16,13 @@ export const projects = [
     githubLink: "https://github.com/baskaaleksander/ebook-marketplace",
   },
   {
+    title: "Secure Auth API",
+    description:
+      "A robust authentication API built with Node.js, TypeScript, and Prisma, featuring advanced security measures, comprehensive logging, and scalable architecture.",
+    tech: ["Express.js", "Prisma", "PostgreSQL", "Jest", "Redis"],
+    link: "https://github.com/baskaaleksander/secure-auth-api",
+  },
+  {
     title: "Financial Tracker API",
     description:
       "A RESTful API for personal financial management built with Node.js, Express, TypeScript, and MongoDB. This application allows users to track their income and expenses, categorize transactions, and generate financial reports.",
