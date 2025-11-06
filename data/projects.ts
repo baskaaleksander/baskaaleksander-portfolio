@@ -4,7 +4,7 @@ export const projects = [
         description:
         "AI-powered document ingestion, review, and Q&A backend built with Spring Boot, JWT authentication, vector search (Qdrant), and S3-compatible storage.\n" +
             "Designed for production scalability, modular domain architecture, and enterprise-level security.",
-        tech: ["Spring Boot", "PostgreSQL", "RabbitMQ", "Qdrant", "Redis", "MinIO", "Docker", "Prometheus", "VPS Deployment"],
+        tech: ["Spring Boot", "PostgreSQL", "RabbitMQ", "Qdrant", "Redis", "MinIO", "Docker", "Prometheus"],
         link: "https://smartdocflow.baskaaleksander.com",
         githubLink: "https://github.com/baskaaleksander/smartdocflow-backend",
     },
